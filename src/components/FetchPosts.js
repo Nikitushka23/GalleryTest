@@ -1,8 +1,7 @@
 import React from 'react';
+import { useSelector} from 'react-redux';
 
 import {Post} from './Post';
-
-import { useSelector} from 'react-redux';
 
 export const FetchedPost = (props) => {
     const posts = useSelector((state) => state.posts);

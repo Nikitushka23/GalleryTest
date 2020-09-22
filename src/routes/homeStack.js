@@ -6,7 +6,7 @@ import {PostImage} from '../screens/PostImage';
 
 const Stack = createStackNavigator();
 
-export const Navigator = (props) => {
+export const Navigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
@@ -20,7 +20,6 @@ export const Navigator = (props) => {
           },
         }} />
         <Stack.Screen name='SinglePost' component={PostImage} options={{
-          // title: `${props.route.params.post}`,
           headerStyle: {
             backgroundColor: '#ccc',
           },

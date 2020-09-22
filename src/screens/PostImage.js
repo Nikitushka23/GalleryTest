@@ -1,15 +1,9 @@
 import React, {useState} from 'react';
-
 import {Image, StyleSheet} from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 export const PostImage = (props) => { 
-
   const [imageSize, setImageSize] = useState(false)
-
-  // const sizehandler = {
-  //   style: imageSize ? styles.fullScreen : styles.fullImage
-  // }
 
   return (
     <TouchableOpacity onPress={() => setImageSize(!imageSize)}>
