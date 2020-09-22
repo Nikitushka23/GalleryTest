@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {StyleSheet, ScrollView, ActivityIndicator, View} from 'react-native';
-import {fetchPosts} from '../redux/actions';
+import {fetchPosts} from '../reducer/actions';
 
 import {useDispatch, useSelector} from 'react-redux';
 
@@ -41,5 +41,5 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
   },
-  indicator: {justifyContent: 'center', marginTop: '60%'},
+  indicator: {justifyContent: 'center', marginTop: '60%', marginLeft: '45%'},
 });

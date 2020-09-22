@@ -1,5 +1,12 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet, TouchableOpacity, Dimensions} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  StyleSheet,
+  TouchableOpacity,
+  Dimensions,
+} from 'react-native';
 
 export const Post = (props) => {
   return (
@@ -11,10 +18,8 @@ export const Post = (props) => {
         <Text style={styles.text}>
           {props.desc ? props.desc : 'hmmm... maybe post?'}
         </Text>
-        <Text style={styles.author}>
-          <Text style={styles.text}>Created by: </Text>
-          {props.user}
-        </Text>
+        <Text style={styles.text}>Created by: </Text>
+        <Text style={styles.author}>{props.user}</Text>
       </View>
     </TouchableOpacity>
   );
@@ -31,9 +36,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(87,87,87,0.2)',
     alignItems: 'center',
   },
-  image: { 
-    width: (Dimensions.get('window').width/2) - 11,
-    height: (Dimensions.get('window').height/3) - 30,
+  image: {
+    width: Dimensions.get('window').width / 2 - 11,
+    height: Dimensions.get('window').height / 3 - 30,
     borderTopLeftRadius: 15,
     borderTopRightRadius: 15,
     // height: '100%',
@@ -47,7 +52,7 @@ const styles = StyleSheet.create({
     fontWeight: 'normal',
     fontSize: 15,
   },
-  author: { 
+  author: {
     marginBottom: '2%',
     // flex: 1,
     textAlign: 'center',
